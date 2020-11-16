@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "CLIENT_ID=d3341f8dd8d541e19bec251efae6231c CLIENT_SECRET=4d7908305aac4d22ab2910efdfe58656 REDIRECT_URI=http://localhost:8888/callback nodemon -r dotenv/config index.ts"
+    "start:dev": "CLIENT_ID=d3341f8dd8d541e19bec251efae6231c CLIENT_SECRET=4d7908305aac4d22ab2910efdfe58656 REDIRECT_URI=http://localhost:8888/callback nodemon index.ts",
+    "start": "REDIRECT_URI=http://localhost:8888/callback nodemon index.ts"
   },
   "author": "",
   "license": "ISC",

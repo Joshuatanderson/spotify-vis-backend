@@ -25,8 +25,8 @@ const generateRandomString = function(length: number) {
 
 const stateKey = 'spotify_auth_state';
 
-
-const port = 8888;
+// Heroku sets a dynamically assigned port, but it should be fixed for local develpoment
+const port = process.env.PORT || 8888;
 const app = express();
 
 app.use(express.static(__dirname + '/public'))

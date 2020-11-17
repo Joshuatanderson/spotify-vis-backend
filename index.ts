@@ -4,10 +4,6 @@ import request from "request";
 import querystring from "querystring";
 import cookieParser from "cookie-parser";
 
-import dotenv from "dotenv"
-
-dotenv.config();
-
 const {CLIENT_ID, CLIENT_SECRET, REDIRECT_URI} = process.env;
 
 console.log(process.env)

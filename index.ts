@@ -33,9 +33,9 @@ app.use(express.static(__dirname + '/public'))
    .use(cors())
    .use(cookieParser());
 
-// app.get('/', (_req, res) => {
-//   res.end('Hello World!');
-// });
+app.get('/', (_req, res) => {
+  res.end('Hello Heroku!');
+});
 
 app.get('/login', function(req, res) {
 
